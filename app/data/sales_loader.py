@@ -10,38 +10,38 @@ from .sales_schema import Cols
 
 SHEET_NAME = "Sales 2022 Onwards"
 
-# Update these keys if your Excel headers differ slightly
+
 COL_MAP = {
-    # time
+
     "year": "Year",
     "month": "Month",
 
-    # metrics
+    
     "sales_value": "Value",
 
-    # core dims
+   
     "brand": "Brand",
     "category": "Category",
     "product_desc": "Item Description",
 
-    # location / region
+    
     "country": "Country",
     "city": "City",
     "area": "Area",
 
-    # route-to-market
+    
     "channel": "Channel",
     "sub_channel": "Sub Channel",
 
-    # people
+    
     "salesman": "Salesmen",
 
-    # customer/store
+    
     "customer": "Customer",
     "customer_account_name": "Customer Account Name",
     "store_id": "Customer Account Number",
 
-    # org / supplier
+    
     "master_distributor": "Master Distributor",
     "distributor": "Distributor",
     "line_of_business": "Line of Business",

@@ -35,7 +35,7 @@ def _validate_plan(plan: ParsedQuery, cols: Cols) -> None:
         if not plan.group_by:
             raise PlanValidationError("group_by is required for BREAKDOWN and TOP_N")
 
-    # COMPARE_YOY requires exactly one time unit (month OR quarter OR year)
+
     f = plan.filters
     if plan.intent == "COMPARE_YOY":
         time_count = int(bool(f.month)) + int(bool(f.quarter)) + int(bool(f.year)) + int(bool(f.months))

@@ -9,7 +9,7 @@ class Settings(BaseModel):
     po_pdf: str = os.getenv("PO_PDF", "Purchase_Order_2025-12-12.pdf")
     pi_pdf: str = os.getenv("PI_PDF", "Proforma_Invoice_2025-12-12.pdf")
 
-    # If you want to store parsed plans/results (optional)
+
     debug: bool = os.getenv("DEBUG", "false").lower() == "true"
 
 settings = Settings()
